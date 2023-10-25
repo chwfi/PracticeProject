@@ -7,7 +7,7 @@ public class d
 {
     void Start()
     {
-        StaticTest.Instance. //...동작 수행
+        //StaticTest.Instance. //...동작 수행
     }
 }
 
