@@ -6,6 +6,7 @@ public interface Flyable
 {
     bool OnFlyMode();
     bool OffFlyMode();
+    void Fly();
 }
 
 public interface Transparentable
@@ -62,5 +63,10 @@ public class FlyHero : BaseHero, Flyable
     public override void Run()
     {
         base.Run();
+    }
+
+    public void Fly()
+    {
+        
     }
 }
