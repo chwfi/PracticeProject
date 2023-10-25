@@ -2,27 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BaseMonster : MonoBehaviour
+public abstract class BaseMonster : MonoBehaviour
 {
-    private float _speed = 5;
-    public float Speed => _speed;
-
-    private float _atkPower = 10;
-    public float AtkPower => _atkPower; 
+    public abstract void Skill(); //접근 지정자 뒤에 abstract 붙이기
 }
 
 public class Goblin : BaseMonster
 {
-    public void DebugSpeed()
+    public override void Skill()
     {
-        Debug.Log(Speed);
+        //고블린 고유의 스킬 구현
     }
 }
 
 public class Slime : BaseMonster
 {
-    public void DebugAtk()
+    public override void Skill()
     {
-        Debug.Log(AtkPower);
+        //슬라임 고유의 스킬 구현
     }
 }
