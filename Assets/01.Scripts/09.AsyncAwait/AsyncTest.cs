@@ -9,6 +9,7 @@ public class AsyncTest : MonoBehaviour
         Test();
         Debug.Log("1");
     }
+
     private async void Test()
     {
         Debug.Log("2");
